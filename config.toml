@@ -39,6 +39,11 @@ copyright = "chenwang0"            # default: author.name ↓        # 默认为
   weight = 40
   identifier = "categories"
   url = "/categories/"
+[[menu.main]]
+  name = "Questions"
+  weight = 50
+  identifier = "questions"
+  url = "/questions.html"
 
 [params]
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
