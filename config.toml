@@ -1,4 +1,4 @@
-baseURL = "http://blog.wangc.org/"
+baseURL = "https://blog.wangc.org/"
 languageCode = "en"
 defaultContentLanguage = "en"
 title = "Meaningless"
