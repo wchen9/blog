@@ -43,7 +43,7 @@ copyright = "chenwang0"            # default: author.name ↓        # 默认为
   name = "Questions"
   weight = 50
   identifier = "questions"
-  url = "/questions.html"
+  url = "/questions"
 
 [params]
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
