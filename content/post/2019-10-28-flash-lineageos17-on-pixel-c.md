@@ -30,6 +30,11 @@ wipe 完了之后又来一坑，以前刷一加 3T 的时候这时候手机连�
 
 至于 [magisk][magisk]，等待 opengapps 10.0 版本发布之后一起刷，没有 Play 商店的 Pixel C 感觉就没那么好用，虽然可以暂时用 apkpure 来代替。
 
+## 最后
+当前发现了两个 bug ，屏幕旋转关闭状态时，竖屏锁定状态会被重置为横屏锁定状态，这个比较影响体验，后续尝试报告 bug 试一下。
+
+另一个是在设置了电池图标显示百分比用量时，图标并未改变。还好平时平板一般在家使用，这个问题没啥影响。
+
 [XDA]:https://forum.xda-developers.com/pixel-c/development/rom-t3591152
 [TWRP]:https://twrp.me/google/googlepixelc.html
 [google driver]:https://developer.android.com/studio/run/win-usb
