@@ -1,4 +1,8 @@
-# Daily Reviews~
+---
+title: "Daily Reviews~"
+draft: true
+
+---
 
 1. 今天你的工作内容是你自己安排的吗？
 2. 你够积极主动吗？
