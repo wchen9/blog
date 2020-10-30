@@ -5,6 +5,8 @@ draft: false
 categories: ["linux"]
 ---
 
+新建VPS总会有一些常规操作，下面这些配置是我常用的配置，仅供参考。环境为Debian buster。
+
 ### 1. 新建用户并授予 sudo 权限
 ``` Shell
 ## 添加用户
