@@ -22,6 +22,9 @@ chmod 440 /etc/sudoers.d/luis
 
 ### 2. 配置用户使用 SSH 密钥登录
 ``` Shell
+## 修改ssh 默认端口 /etc/ssh/sshd_config
+Port 30007
+
 ## 生成密钥
 ssh-keygen -t rsa
 
@@ -64,7 +67,7 @@ sudo ufw allow 1000:2000/tcp
 sudo ufw delete allow 30007
 ```
 
-##### 参考链接：
+### 参考链接：
 1. [Linux 使用 adduser 与 useradd 添加普通用户的正确姿势 ](https://p3terx.com/archives/add-normal-users-with-adduser-and-useradd.html)
 2. [Linux 中授予普通用户 sudo 权限的正确方法 ](https://p3terx.com/archives/linux-grants-normal-user-sudo-permission.html)
 3. [Debian9.5下ssh密钥登录配置步骤（免密码登录）和ssh-keygen 命令常用参数](https://www.cnblogs.com/pipci/p/9819902.html)
