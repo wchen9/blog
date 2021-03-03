@@ -1,8 +1,9 @@
 ---
-title: "Pixel C 刷 LineageOS 17.0 记录"
+title: Pixel C 刷 LineageOS 17.0 记录
 date: 2019-10-28T15:51:02+08:00
 draft: false
-categories: ["android"]
+tags:
+  - android
 ---
 
 Pixel C 的官方系统已经停留在8.1不会更新了，目前官方仅仅有一些不定期的安全补丁。好在社区里总会有热心人来延续这类设备的生命周期，在 [XDA][XDA] 上已经有大神更新了 LineageOS 17.0 版本的 ROM ，虽然还存在一些 bug ，但已经堪用了，在此记录一下刷机过程~

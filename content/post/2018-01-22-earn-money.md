@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "【译】亲爱的程序员同侪们，这是你们来钱的途径"
+title:  "[译]亲爱的程序员同侪们，这是你们来钱的途径"
 date:   2018-01-22 21:17:08 +0800 
-categories: ["finance"]
+tags:
+  - finance
 ---
 
 最近我在Reddit的 [/r/cscareerquestions][/r/cscareerquestions] （一个不错的程序员们交流各种不同职业生涯的地方）版块上看到一些非常令人惊讶的对话。

@@ -1,8 +1,9 @@
 ---
-title: "VPS首次登陆后的安全设置"
+title: VPS首次登陆后的安全设置
 date: 2020-09-16T16:22:43+08:00
 draft: false
-categories: ["linux"]
+tags:
+  - linux
 ---
 
 新建VPS总会有一些常规操作，下面这些配置是我常用的配置，仅供参考。环境为Debian buster。
