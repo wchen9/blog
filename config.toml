@@ -8,7 +8,7 @@ enableEmoji = true
 footnotereturnlinkcontents = "↩"
 
 [permalinks]
-    post = "/post/:year/:month/:day/:slug/"
+    post = "/:filename/"
 
 [[menu.main]]
     name = "Tags"
@@ -28,4 +28,3 @@ footnotereturnlinkcontents = "↩"
     siteID = "ABCDE"
     # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
     serverURL = "analytics.example.com"
-
