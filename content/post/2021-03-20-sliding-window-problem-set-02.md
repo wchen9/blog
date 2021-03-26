@@ -54,7 +54,7 @@ Explanation: Smallest subarrays with a sum greater than or equal to '8' are [3, 
 
 时间复杂度： O(N ^ 2)。
 
-这个问题实质上与 [上一题](https://blog.wangc.org/post/2021/03/16/%E7%AE%97%E6%B3%95-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3-%E4%B9%A0%E9%A2%9801/) 比较类似，除了滑动窗口的大小不固定以外。解法如下：
+这个问题实质上与 [上一题](https://blog.wangc.org/2021-03-16-sliding-window-problem-set-01/) 比较类似，除了滑动窗口的大小不固定以外。解法如下：
 
 1. 从数组第一位开始往后累加，直到满足条件即累加的和大于等于 S 。
 2. 将上一步中满足条件的子数组作为窗口。记录当前窗口的尺寸为目前的最小值。
