@@ -32,24 +32,24 @@ Explanation: Smallest subarrays with a sum greater than or equal to '8' are [3, 
 最简单的暴力算法为，从数组最开始算，遍历到数组的最末元素累加，若遍历过程中满足条件，其累加值大于等于 S ，则将该子数组长度值赋给最短长度。然后子数组从下一位开始算，重复上述过程，若满足条件后，将最短长度与上一次满足的最短长度对比，取小值。
 
 ``` java
-    public static int findMinSubArray(int S, int[] arr) {
-        int min = Integer.MAX_VALUE;
-        boolean found = false;
-        for (int i = 0; i < arr.length; i++) {
-            int sum = 0;
-            for (int j = i; j < arr.length; j++) {
-                sum += arr[j];
-                if (sum >= S) {
-                    found = true;
-                    min = Math.min(j - i + 1, min);
-                }
+public static int findMinSubArray(int S, int[] arr) {
+    int min = Integer.MAX_VALUE;
+    boolean found = false;
+    for (int i = 0; i < arr.length; i++) {
+        int sum = 0;
+        for (int j = i; j < arr.length; j++) {
+            sum += arr[j];
+            if (sum >= S) {
+                found = true;
+                min = Math.min(j - i + 1, min);
             }
         }
-        if (found) {
-            return min;
-        }
-        return -1;
     }
+    if (found) {
+        return min;
+    }
+    return -1;
+}
 ```
 
 时间复杂度： O(N ^ 2)。
@@ -67,23 +67,23 @@ Explanation: Smallest subarrays with a sum greater than or equal to '8' are [3, 
 ![2021-03-25_211452](https://cdn.jsdelivr.net/gh/pivst/images@master/PIC/2021-03-25_211452.723m80s4rq4g.png)
 
 ``` java
-    public static int findMinSubArrayBySlidingWindow(int S, int[] arr) {
-        int windowSum = 0;
-        int min = Integer.MAX_VALUE;
-        int windowStart = 0;
-        // 因窗口需要遍历到数组末尾，结束条件为 arr.length-1
-        for (int windowEnd = 0; windowEnd < arr.length; windowEnd++) {
-            // 当windowSum < S 时，窗口向后挪一位
-            windowSum += arr[windowEnd];
-            // windowSum >= S 时，条件满足，赋值最小窗口，同时缩小窗口直到 windowSum < S
-            while (windowSum >= S) {
-                min = Math.min(windowEnd - windowStart + 1, min);
-                windowSum -= arr[windowStart];
-                windowStart++;
-            }
-        }
-        return min != Integer.MAX_VALUE ? min : 0;
-    }
+public static int findMinSubArrayBySlidingWindow(int S, int[] arr) {
+   int windowSum = 0;
+   int min = Integer.MAX_VALUE;
+   int windowStart = 0;
+   // 因窗口需要遍历到数组末尾，结束条件为 arr.length-1
+   for (int windowEnd = 0; windowEnd < arr.length; windowEnd++) {
+       // 当windowSum < S 时，窗口向后挪一位
+       windowSum += arr[windowEnd];
+       // windowSum >= S 时，条件满足，赋值最小窗口，同时缩小窗口直到 windowSum < S
+       while (windowSum >= S) {
+           min = Math.min(windowEnd - windowStart + 1, min);
+           windowSum -= arr[windowStart];
+           windowStart++;
+       }
+   }
+   return min != Integer.MAX_VALUE ? min : 0;
+}
 ```
 
 #### 时间复杂度
