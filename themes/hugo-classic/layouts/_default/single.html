@@ -21,4 +21,13 @@
     <a href="/"> >> Home</a>
   </main>
 </div>
+<div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="d83aaa01-0a86-40b7-a54e-ff7a99145f64"
+  data-page-id="{{ .RelPermalink | relURL }}"
+  data-page-url="{{ .RelPermalink | relURL }}"
+  data-page-title="{{ .Title }}"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+<!-- <script async defer src="https://cdn.jsdelivr.net/npm/cusdis@latest/dist/cusdis.es.js"></script> -->
 {{ partial "footer.html" . }}
