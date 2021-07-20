@@ -37,7 +37,7 @@ name = "chenwang0"
 [permalinks]
   "/" = "/:year/:month/:filename/"
 [params]
-  customCSS = []
+  customCSS = ["css/custom.css"]
   dateFormat = "2006-01-02"
   description = "an example site for hugo theme TeXify"
   enableFullRSS = true
