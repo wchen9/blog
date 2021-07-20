@@ -1,0 +1,30 @@
+baseurl = "https://blog.wangc.org/"
+languageCode = "en-us"
+title = "Meaningless"
+theme = "hugo-classic"
+googleAnalytics = "UA-127207962-1"
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+enableEmoji = true
+footnotereturnlinkcontents = "↩"
+
+[permalinks]
+    post = "/:filename/"
+
+[[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+[[menu.feed]]
+    name = "Subscribe"
+    url = "/index.xml"
+
+[params]
+    description = "A simple, minimal blog for those who love text."
+    footer = "Open-Source | [Github](https://github.com/goodroot/hugo-classic) | [Mail](mailto:chenwang@outlook.com)"
+    custom_css = ["css/theme-override.css"]
+
+# If you want to use Fathom (https://usefathom.com) for analytics, add this section
+[params.fathomAnalytics]
+    siteID = "ABCDE"
+    # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
+    serverURL = "analytics.example.com"

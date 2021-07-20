@@ -1,30 +1,56 @@
-baseurl = "https://blog.wangc.org/"
-languageCode = "en-us"
+baseURL = "https://blog.wangc.org/"
+defaultContentLanguage = "en"
+hasCJKLanguage = true
+languageCode = "en"
+paginate = 10
+theme = "hugo-theme-texify"
 title = "Meaningless"
-theme = "hugo-classic"
-googleAnalytics = "UA-127207962-1"
-ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
-enableEmoji = true
-footnotereturnlinkcontents = "↩"
 
-[permalinks]
-    post = "/:filename/"
+disqusShortname = ""
+googleAnalytics = "UA-127207962-1"
+pygmentsUseClasses = true
+
+[author]
+name = "chenwang0"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [[menu.main]]
-    name = "Tags"
-    url = "/tags/"
-    weight = 2
-[[menu.feed]]
-    name = "Subscribe"
-    url = "/index.xml"
-
+  identifier = "post"
+  name = "Post"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  identifier = "archives"
+  name = "Archives"
+  url = "/post/"
+  weight = 2
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 3
+[permalinks]
+  "/" = "/:year/:month/:filename/"
 [params]
-    description = "A simple, minimal blog for those who love text."
-    footer = "Open-Source | [Github](https://github.com/goodroot/hugo-classic) | [Mail](mailto:chenwang@outlook.com)"
-    custom_css = ["css/theme-override.css"]
+  customCSS = []
+  dateFormat = "2006-01-02"
+  description = "an example site for hugo theme TeXify"
+  enableFullRSS = true
+  enableHanEmph = true
+  enableMathjax = true
+  favicon = "/favicon.ico"
+  footnote = "Follow me on <a class=link href=https://github.com/wchen9>GitHub</a>, <a class=link href=https://twitter.com/queensferryme>Twitter</a> or <a class=link href=/index.xml>RSS</a> | <a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh target=_blank rel=noopener>CC BY-NC-SA 4.0</a>"
+  keywords = ["hugo", "latex", "theme"]
 
-# If you want to use Fathom (https://usefathom.com) for analytics, add this section
-[params.fathomAnalytics]
-    siteID = "ABCDE"
-    # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
-    serverURL = "analytics.example.com"
+# see https://utteranc.es for installation guide
+[params.utterances]
+  enable = true
+  repo = "wchen9/blog"
+  issue_term = "pathname"
+  label = "Comment"
+  theme = "github-light"
