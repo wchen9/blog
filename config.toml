@@ -49,8 +49,29 @@ name = "chenwang0"
 
 # see https://utteranc.es for installation guide
 [params.utterances]
-  enable = true
+  enable = false
   repo = "wchen9/blog"
   issue_term = "pathname"
   label = "Comment"
   theme = "github-light"
+
+# https://giscus.app
+[params.giscus]
+enable = false # whether to enable giscus
+# paste giscus' <script></script> configuration between the triple quotes
+script = """
+<script src="https://giscus.app/client.js"
+        data-repo="wchen9/blog"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkxNjQ1MzU2MzE="
+        data-category="Q&A"
+        data-category-id="DIC_kwDOCc6dT84CPDvq"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+"""
