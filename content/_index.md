@@ -1,4 +1,4 @@
 ---
-title: "Home"
+title: "Meaningless"
 ---
-This is some info about me.
+Maybe a software engineer.

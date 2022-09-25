@@ -8,8 +8,8 @@ pygmentsUseClasses = true
 hasCJKLanguage = true
 
 [params]
-  description = "Your site description"
-  copyright = "Copyright © 2021 Your Name"
+  description = "Maybe a software engineer"
+  copyright = "Copyright © 2022 wchen9"
   dark = "auto"
   highlight = true
 
@@ -29,7 +29,7 @@ hasCJKLanguage = true
     weight = 20
 
 [permalinks]
-  posts = "/:title/"
+  posts = "/:filename/"
 
 [markup.goldmark.renderer]
   # Allow HTML in Markdown
