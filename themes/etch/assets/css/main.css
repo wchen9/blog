@@ -15,6 +15,7 @@ body {
     margin: 0 auto;
     padding: 0 16px;
     line-height: 1.6;
+    overflow-wrap: break-word;
 }
 
 header#banner {
@@ -268,7 +269,7 @@ main#content pre code {
     padding: 0;
 }
 
-main#content section.footnotes {
+main#content .footnotes {
     font-size: 0.9em;
 }
 
