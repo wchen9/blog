@@ -22,11 +22,18 @@ hasCJKLanguage = true
     weight = 10
 
   [[menu.main]]
+    identifier = "goods"
+    name = "goods"
+    title = "goods"
+    url = "/goods/"
+    weight = 20
+
+  [[menu.main]]
     identifier = "about"
     name = "about"
     title = "about"
     url = "/about/"
-    weight = 20
+    weight = 30
 
 [permalinks]
   posts = "/:filename/"
