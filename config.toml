@@ -9,7 +9,6 @@ hasCJKLanguage = true
 
 [params]
   description = "Maybe a software engineer"
-  copyright = "Copyright © 2022 wchen9"
   dark = "auto"
   highlight = true
 
