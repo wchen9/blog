@@ -35,3 +35,5 @@ draft: true
 [[目标贴] 2023 已经结束了，定一个 24 年目标吧！](https://www.v2ex.com/t/1001902#reply131)
 
 [五十年发展计划](https://ox8fm5du5cs.feishu.cn/wiki/GJXTw1VpwilkZFkJ3pqcUKH8n7b)
+
+[大龄程序员的出路难道是开滴滴送外卖吗](https://www.v2ex.com/t/1002227#reply119)
