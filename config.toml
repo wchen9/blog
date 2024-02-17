@@ -8,38 +8,38 @@ pygmentsUseClasses = true
 hasCJKLanguage = true
 
 [params]
-  description = "Maybe a software engineer"
-  dark = "auto"
-  highlight = true
+description = "Maybe a software engineer"
+dark = "auto"
+highlight = true
 
 [menu]
-  [[menu.main]]
-    identifier = "posts"
-    name = "posts"
-    title = "posts"
-    url = "/"
-    weight = 10
+[[menu.main]]
+identifier = "posts"
+name = "posts"
+title = "posts"
+url = "/"
+weight = 10
 
-  [[menu.main]]
-    identifier = "goods"
-    name = "goods"
-    title = "goods"
-    url = "/goods/"
-    weight = 20
+# [[menu.main]]
+#   identifier = "goods"
+#   name = "goods"
+#   title = "goods"
+#   url = "/goods/"
+#   weight = 20
 
-  [[menu.main]]
-    identifier = "about"
-    name = "about"
-    title = "about"
-    url = "/about/"
-    weight = 30
+[[menu.main]]
+identifier = "about"
+name = "about"
+title = "about"
+url = "/about/"
+weight = 30
 
 [permalinks]
-  posts = "/:filename/"
+posts = "/:filename/"
 
 [markup.goldmark.renderer]
-  # Allow HTML in Markdown
-  unsafe = true
+# Allow HTML in Markdown
+unsafe = true
 
-  [markup.tableOfContents]
-    ordered = true
+[markup.tableOfContents]
+ordered = true
