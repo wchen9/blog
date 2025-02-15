@@ -12,21 +12,6 @@ description = "Maybe a software engineer"
 dark = "auto"
 highlight = true
 
-[menu]
-[[menu.main]]
-identifier = "posts"
-name = "posts"
-title = "posts"
-url = "/"
-weight = 10
-
-# [[menu.main]]
-#   identifier = "goods"
-#   name = "goods"
-#   title = "goods"
-#   url = "/goods/"
-#   weight = 20
-
 [[menu.main]]
 identifier = "about"
 name = "about"
